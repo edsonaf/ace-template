@@ -1,0 +1,25 @@
+:root {
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
+
+    --menu-background-color: #48AFDE;
+}
+
+body {
+    color: rgb(var(--foreground-rgb));
+    font-family: 'Recoleta', sans-serif;
+}
+
+/* responsible for the blue tick when a link is clicked */
+.menu-effect {
+    left: -0.75rem;
+    top: 0.125rem;
+    z-index: -10;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 0.5rem;
+    background-color: var(--menu-background-color);
+    transition-duration: .5s;
+    position: absolute;
+}
